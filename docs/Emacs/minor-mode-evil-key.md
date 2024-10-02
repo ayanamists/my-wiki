@@ -2,7 +2,7 @@
 
 minor-mode 在定义时声明了自己绑定的快捷键
 
-```
+```elisp
 ;; Ref: https://www.gnu.org/software/emacs/manual/html_node/elisp/Defining-Minor-Modes.html
 (define-minor-mode hungry-mode
   "Toggle Hungry mode.

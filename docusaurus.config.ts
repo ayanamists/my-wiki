@@ -139,6 +139,7 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} ayanamists. Built with Docusaurus.`,
     },
     prism: {
+      additionalLanguages: ['java', 'lisp', 'haskell'],
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },

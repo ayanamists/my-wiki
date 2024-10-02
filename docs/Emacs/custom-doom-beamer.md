@@ -4,7 +4,7 @@
 
 我设置了间桐樱作为我的欢迎页 Banner，效果如图：
 
-![效果图.png](https://s21.ax1x.com/2024/10/01/pA3t4iR.png)
+![效果图.png](https://i.ibb.co/QKgg4sL/2024-10-01-20-36-05.png)
 
 :::warning
 
@@ -110,13 +110,13 @@ Character code properties: customize what to show
 
 如果你在 Macos 平台，显示效果可能会比较奇怪。
 
-![奇怪的显示.png](https://s21.ax1x.com/2024/10/01/pA3Ngpt.png)
+![奇怪的显示.png](https://i.ibb.co/gD6DP9w/2024-10-01-21-00-58.png)
 
 这里关键的问题是，默认的 `Apple Braille` 字体有多个 style，而不知道为什么，Doom Emacs 会使用 `Outline 6 Dot` style.
 
 这里最简单的办法就是单独给 Braille 盲文设置字体，`Julia Mono` 是不错的选择。
 
-```
+```elisp
 (set-fontset-font t 'braille
    (font-spec :family "Julia Mono" :spacing 'M))
 ```
