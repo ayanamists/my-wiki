@@ -12,4 +12,8 @@ Emacs 里的缩进配置相当复杂且难绷。特别是具体到每种语言�
 (add-hook 'typescript-mode-hook
           (lambda ()
             (setq typescript-indent-level 2)))
+
+(add-hook 'typescript-tsx-mode-hook
+          (lambda ()
+            (setq typescript-indent-level 2)))
 ```
