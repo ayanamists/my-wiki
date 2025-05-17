@@ -78,7 +78,7 @@ export function Reply({
 }) {
   const highlight = React.useContext(HighlightUserContext);
   const isHighlight = highlight === authorId;
-  return isHighlight ? (
+  return (
     <div className={clsx(styles.reply, isHighlight && styles.highlight)}>
       <div className={styles.replyHeader}>
         <img src={authorAvatar} className={styles.avatar} />
@@ -88,8 +88,7 @@ export function Reply({
         </div>
       </div>
       <div className={styles.replyBody}>{children}</div>
-    </div>
-  ) : null;
+    </div>);
 }
 
 // Image component for better layout
