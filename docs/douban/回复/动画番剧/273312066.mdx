@@ -1,0 +1,36 @@
+---
+title: 组里为什么这么多momo？
+---
+
+import { Forum, Post, Reply } from '@site/src/components/Forum';
+
+<Forum groupName="动画番剧" groupUrl="https://www.douban.com/group/596353/" archivedAt="2025-05-16T15:08:04.650Z">
+  <Post
+    id="273312066"
+    title="组里为什么这么多momo？"
+    url="https://www.douban.com/group/topic/273312066/?_spm_id=MjQ0MTY5MzQ3"
+    pubTime="2022-08-21"
+    highlightUserId="191397140"
+  >
+如题
+
+<Reply
+  id="4801019521"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2022-08-20"
+  pubLocation="16:31:53 北京"
+  upvotes={4}
+>
+![image](https://img2.doubanio.com/view/richtext/large/public/p401025751.jpg)
+
+实际上，db 没有 anonymous 模式。web端的用户名链接里面有用户
+ID，比如说我上面的这个 momo 就是 194682453.
+这是写在网页里的，当然也可以把它改成真正的 ID.
+不过问题是，对于人来说，ID
+是难以记忆的。这样一来，用这种迂回的手段实现的 anonymous
+确实在某种程度上有了 anonymity.
+</Reply>
+  </Post>
+</Forum>

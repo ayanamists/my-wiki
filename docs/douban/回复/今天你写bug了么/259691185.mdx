@@ -1,0 +1,56 @@
+---
+title: 申删
+---
+
+import { Forum, Post, Reply } from '@site/src/components/Forum';
+
+<Forum groupName="今天你写bug了么?" groupUrl="https://www.douban.com/group/a_bug/" archivedAt="2025-05-16T16:43:06.323Z">
+  <Post
+    id="259691185"
+    title="申删"
+    url="https://www.douban.com/group/topic/259691185/?_spm_id=MjA1NjQyMjE2"
+    pubTime="2022-04-12"
+    highlightUserId="191397140"
+  >
+..
+
+<Reply
+  id="4566261296"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2022-03-09"
+  pubLocation="22:07:05"
+  upvotes={1}
+>
+回复 [克劳塞维茨](https://www.douban.com/people/61933125/)：
+> 这个其实有难度，但肯定没你想得那么难。
+你找一本龙书看完，或者上哔哩哔哩找那个龙书作者写的课看完就可以了。
+也可以看看一本书叫什么30天写编译器，真不那么难，跟着做就行了。
+另外你要写的应该是解释型语言，比编译型语言要简单，就更好弄了。
+
+我可以骂人吗？不要一知半解就信口开河好不好？人家要做的是编译器又不是解释器，况且解释器也不是那么简单。。。
+
+C语言的编译器反而比较简单，如果啥都不考虑的话一个pass就可以生成native
+code
+</Reply>
+
+<Reply
+  id="4566278220"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2022-03-09"
+  pubLocation="22:17:36"
+  upvotes={1}
+>
+先搞清楚一个问题：你的目标代码，或者说代码的执行环境是什么？
+
+说实话时间这么少了，很难做出来一个靠谱的。你如果想编译到native，那类js语言肯定要自己搞个runtime，这不是一时半会能做好的。
+
+如果你有个IR，或者和我做的一样，这个编译器就是用来产生IR的，那相对比较简单。
+
+另外你要是就做js的，直接用babel，不要自己再去做parser了！
+</Reply>
+  </Post>
+</Forum>

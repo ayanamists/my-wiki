@@ -1,0 +1,201 @@
+---
+title: 在 2023 年如何看动画？A Complete Solution
+---
+
+import { Forum, Post, Reply } from '@site/src/components/Forum';
+
+<Forum groupName="动画番剧" groupUrl="https://www.douban.com/group/596353/" archivedAt="2025-05-16T14:10:40.523Z">
+  <Post
+    id="283548646"
+    title="在 2023 年如何看动画？A Complete Solution"
+    url="https://www.douban.com/group/topic/283548646/?_spm_id=MTkxMzk3MTQw"
+    pubTime="2023-02-18"
+    highlightUserId="191397140"
+  >
+自从 Bilibili
+实行先审后播之后，如何观看最新的日本动画就成了一个亟待解决的问题。诸如
+Age.net 之类的小网站为了节省带宽资源，无一例外地使用了码率非常低的片源。
+所以，时隔多年以后，Bt
+下载又成为了看动画的第一选择。但我们不止想要下载，更想要一种自动化的播放体验：
+
+
+
+要达成这种体验，自然是需要一整套软件系统的。首先，我们需要一个「媒体服务器」，它可以把硬盘上的番剧变为可通过
+web 或客户端点播的资源。
+
+[Jellyfin](https://www.douban.com/link2/?url=https%3A%2F%2Fjellyfin.org%2F&link2key=8cb9c9d33b) 是我的选择。通过
+[jellyfin-plugin-bangumi](https://www.douban.com/link2/?url=https%3A%2F%2Fgithub.com%2Fkookxiang%2Fjellyfin-plugin-bangumi&link2key=8cb9c9d33b)，jellyfin
+可以获取番剧的中文元数据，进而给出非常良好的番剧归档：
+
+![image](https://img3.doubanio.com/view/group_topic/l/public/p594410593.webp)
+
+![在这个界面就可以播放了](https://img1.doubanio.com/view/group_topic/l/public/p594410748.webp)
+
+那么，问题就剩下了「如何自动下载番剧」？对于这个问题，我的选择是
+qBitorrent 的 Rss 订阅功能。如果想要全自动体验，那么可以使用
+[Auto_Bangumi](https://www.douban.com/link2/?url=https%3A%2F%2Fgithub.com%2FEstrellaXD%2FAuto_Bangumi&link2key=8cb9c9d33b)。如果能接受半自动（手动导入订阅列表、可能需要手工重命名剧集），那么可以直接订阅
+mikan.com 或 dmhy.org 的 rss 列表
+
+<Reply
+  id="5032628771"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="11:45:37 江苏"
+  upvotes={0}
+>
+回复 [江畔独步舞剑](https://www.douban.com/people/70271068/)：
+> 梯子在手天下我有......不过这个界面看起来挺精致。
+
+梯子很难搞到香港台湾的 ip 呀，那边 vps
+都太贵了。我反正是不太愿意给巴哈之类的网站送钱
+</Reply>
+
+<Reply
+  id="5032635370"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="11:51:47 江苏"
+  upvotes={0}
+>
+回复 [江畔独步舞剑](https://www.douban.com/people/70271068/)：
+> 送钱肯定算了，电报应该有很多动画仓库频道传资源
+
+在电报看动画片，这个有点太后现代了
+</Reply>
+
+<Reply
+  id="5032915028"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="16:04:55 江苏"
+  upvotes={0}
+>
+回复 [🤮](https://www.douban.com/people/253073820/)：
+> 你认真的？哪个T不能变换地区呢随便下个Mcfee Nord
+全球至少十几个地区随便换，港台都有😅
+
+呃，啊这，我一般是在云上租个实例部署的，现成的服务......我反正是不会用的
+</Reply>
+
+<Reply
+  id="5032924884"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="16:13:38 美国"
+  upvotes={0}
+>
+回复 [🤮](https://www.douban.com/people/253073820/)：
+> crunchyroll 网飞hulu能看正版的地方多了，这么热爱就看盗版不合适吧🥺
+
+你说的这几个服务可都不对中国大陆开放啊。如果有一个服务商能够对大陆提供与Bt下载质量相当的动画点播服务，我还是很乐意付费的。现在我还开着阿B的大会员呢......
+</Reply>
+
+<Reply
+  id="5032944129"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="16:31:03 江苏"
+  upvotes={0}
+>
+回复 [🤮](https://www.douban.com/people/253073820/)：
+> 你认真的？哪个T不能变换地区呢随便下个Mcfee Nord
+全球至少十几个地区随便换，港台都有😅
+
+我突然回过味来了，现在美西时间美东时间都凌晨了，您这么活跃，不会是因为用这些服务导致上豆瓣也是走的🇺🇸路线吧......虚拟专用网络的问题就在这里了，虚拟专用网络本身就不是为了代理服务而设计的，它在技术上就很难去做分流
+</Reply>
+
+<Reply
+  id="5032963056"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="16:47:55 江苏"
+  upvotes={0}
+>
+回复 [🤮](https://www.douban.com/people/253073820/)：
+> 笑死 美国只有一个时间？睁开眼看看世界吧
+
+PST 和 EST
+啊，还是说您在阿拉斯加或者夏威夷之类的地方？当然这个只是我的小玩笑了，我也是经常一两点不睡觉的
+</Reply>
+
+<Reply
+  id="5032973385"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="16:57:20 江苏"
+  upvotes={0}
+>
+回复 [🤮](https://www.douban.com/people/253073820/)：
+> 你知道PST包括哪些地区吗还阿拉斯加夏威夷，学学地理吧可怜人
+
+![image](https://img9.doubanio.com/view/richtext/large/public/p498205184.jpg)
+
+PST 就那个橙色的啊，我的意思明显是把阿拉斯加和夏威夷从 PST
+里排除出去了～您地理可能很好，但是似乎没认真理解我在说啥哦
+</Reply>
+
+<Reply
+  id="5032976579"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="17:00:12 江苏"
+  upvotes={0}
+>
+回复 [我真初中毕业啊](https://www.douban.com/people/259251102/)：
+> 没啥时隔多年，其实一直都是
+
+我觉得阿 B
+还是不错的，以前没先审后播的时候是真的有「追番」的感觉啊，到了那个点就打开
+App 等着看
+</Reply>
+
+<Reply
+  id="5032985769"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="17:08:39 江苏"
+  upvotes={0}
+>
+回复 [🤮](https://www.douban.com/people/253073820/)：
+> ![image](https://img9.doubanio.com/view/richtext/s/public/p498205184.jpg)
+
+所以呢？人12点多必须赶紧睡觉啊？您这么关心我的健康呢？谢谢哦
+那我也忠告一下少上网少往女人堆里钻 小心损阳气惹
+
+hhh，我只是说我猜嘛～阳气什么的，那种东西谁在乎啊
+</Reply>
+
+<Reply
+  id="5032986825"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-02-18"
+  pubLocation="17:09:36 江苏"
+  upvotes={0}
+>
+回复 [我真初中毕业啊](https://www.douban.com/people/259251102/)：
+> 强国删减又不是从所谓先审后播开始的，一直都是
+
+我对删减不是那么敏感，除非是那种影响剧情理解的
+</Reply>
+  </Post>
+</Forum>

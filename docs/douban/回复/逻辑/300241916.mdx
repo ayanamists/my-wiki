@@ -1,0 +1,31 @@
+---
+title: p或者q,并非p,所以q
+---
+
+import { Forum, Post, Reply } from '@site/src/components/Forum';
+
+<Forum groupName="逻辑" groupUrl="https://www.douban.com/group/logic/" archivedAt="2025-05-16T14:18:57.205Z">
+  <Post
+    id="300241916"
+    title="p或者q,并非p,所以q"
+    url="https://www.douban.com/group/topic/300241916/?_spm_id=MjUzNDE3MTAy"
+    pubTime="2024-11-22"
+    highlightUserId="191397140"
+  >
+我是人或者我喜欢猫，我不是人，所以我喜欢猫？？？好迷惑啊，有没有友友可以解答下
+
+<Reply
+  id="5628482063"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2024-05-18"
+  pubLocation="13:53:56 江苏"
+  upvotes={2}
+>
+1.  在经典逻辑里， p / q -\> \~p -\> q 是永真式，可以用真值表检查
+2.  在直觉主义逻辑里，p / q 可以解释成 "要么能证明 p，要么能证明 q"，\~p
+    的解释是 "不能证明 p"，把这两个条件拼起来，得到 "一定能证明 q"
+</Reply>
+  </Post>
+</Forum>

@@ -1,0 +1,52 @@
+---
+title: 学术互助｜毕设后期发现代码中的一个bug 应该忽略继续 还是重...
+---
+
+import { Forum, Post, Reply } from '@site/src/components/Forum';
+
+<Forum groupName="今天你写bug了么?" groupUrl="https://www.douban.com/group/a_bug/" archivedAt="2025-05-16T16:37:09.890Z">
+  <Post
+    id="264504936"
+    title="学术互助｜毕设后期发现代码中的一个bug 应该忽略继续 还是重..."
+    url="https://www.douban.com/group/topic/264504936/?_spm_id=MTQxNTc1Mzcy"
+    pubTime="2022-06-04"
+    highlightUserId="191397140"
+  >
+不是计算机专业学生 但是跟的导师和做的课题是数据挖掘相关的 做一个辨识模型
+在提取特征变量的时候 少用了一个计算语句
+程序可以顺利运行并且得到的模型结果很好
+但是没有进行上述操作就导致实际跟我想要得到的东西不一致
+添上这一句之后模型精度又暴跌 不能看的程度......
+
+今天下午才发现😩我应该怎么办哇😢
+
+上周三已经跟老师汇报完毕 正准备完善下模型 开始收尾工作了......心塞中
+
+<Reply
+  id="4620346135"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2022-04-13"
+  pubLocation="17:04:12"
+  upvotes={12}
+>
+你这么抽象的描述我没法给建议，但是写代码的时候应该有一个起码的原则：当代码的行为与spec不一致时，无论花多大的代价也要把原因找出来。
+</Reply>
+
+<Reply
+  id="4622306520"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2022-04-14"
+  pubLocation="20:55:39"
+  upvotes={7}
+>
+回复 [豆友4473247](https://www.douban.com/people/4473247/)：
+> 
+
+别人写的代码用"能work就行"的态度，我觉得无可厚非，自己写的代码再用这种态度就有点不太合适了。
+</Reply>
+  </Post>
+</Forum>

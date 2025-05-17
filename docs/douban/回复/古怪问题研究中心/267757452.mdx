@@ -1,0 +1,40 @@
+---
+title: 古怪脑洞｜有没有可能由像素大小推算出这张照片被传了几个中...
+---
+
+import { Forum, Post, Reply } from '@site/src/components/Forum';
+
+<Forum groupName="古怪问题研究中心" groupUrl="https://www.douban.com/group/philosophasters/" archivedAt="2025-05-16T16:29:03.519Z">
+  <Post
+    id="267757452"
+    title="古怪脑洞｜有没有可能由像素大小推算出这张照片被传了几个中..."
+    url="https://www.douban.com/group/topic/267757452/?_spm_id=MTMwNDkwNjkw"
+    pubTime="2022-05-29"
+    highlightUserId="191397140"
+  >
+我在v\~x给朋友发了一张非原图82k，
+
+过了半天在群里发现一张我发给朋友的那张图25k。
+
+但我试了好几次传来传去像素怎么也是稳定在80-100k内。
+
+甚至发了pyq再保存下来增加到了一两百k。
+
+所以25k到底怎么来的，是否能大概计算出中间传了几个人？
+
+<Reply
+  id="4685108605"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2022-05-29"
+  pubLocation="14:42:12"
+  upvotes={5}
+>
+对于 jpeg 这种算法，不一定每次压缩后图片的大小都是严格减小的。
+
+另外，我记得有一个技术是检测一张图片有没有被重复压缩过，可以查一下相关资料，关键词
+Recompression Detection. 至于 25k ，我倾向于是你保存了"预览图"。
+</Reply>
+  </Post>
+</Forum>

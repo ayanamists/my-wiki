@@ -1,0 +1,57 @@
+---
+title: 日常古怪版｜求助，我是不是被恶意软件监控了，这是什么东西...
+---
+
+import { Forum, Post, Reply } from '@site/src/components/Forum';
+
+<Forum groupName="古怪问题研究中心" groupUrl="https://www.douban.com/group/philosophasters/" archivedAt="2025-05-16T14:36:38.499Z">
+  <Post
+    id="286871852"
+    title="日常古怪版｜求助，我是不是被恶意软件监控了，这是什么东西..."
+    url="https://www.douban.com/group/topic/286871852/?_spm_id=MTYzMzA1Mjc4"
+    pubTime="2023-04-17"
+    highlightUserId="191397140"
+  >
+对不起大家，实在不知道发哪了，不妥删。
+
+oppo手机，今天在下载的文件夹发现了这个，打开是我的手机日志，我从来都没有下过这个东西啊😰
+
+![image](https://img2.doubanio.com/view/group_topic/l/public/p604101611.webp)
+
+![image](https://img1.doubanio.com/view/group_topic/l/public/p604101610.webp)
+
+<Reply
+  id="5105082655"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-04-17"
+  pubLocation="09:41:20 江苏"
+  upvotes={0}
+>
+这个appmonitorsdk
+应该是安卓本身的sdk，不是监控用户的，而是监控app，记录错误的
+</Reply>
+
+<Reply
+  id="5105138211"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-04-17"
+  pubLocation="10:37:48 江苏"
+  upvotes={1}
+>
+回复 [momo](https://www.douban.com/people/163305278/)：
+> 啊啊，所以是系统记录app的文件？太感谢姐妹了!😭😭 要不我真的担心死了😭😭
+
+呃，首先我是男性哈（不过对"姐妹"这个称呼没什么意见）。我仔细搜索了一下，这个似乎不是
+android 的 sdk，而是 oppo 的 color OS
+独有的一个记录模块，它记录的似乎是短信服务的工作情况，可以参考这个帖子：
+[https://forum.xda-developers.com/t/help-connecting-to-mobile-data-causing-reboot.4157699/](https://www.douban.com/link2/?url=https%3A%2F%2Fforum.xda-developers.com%2Ft%2Fhelp-connecting-to-mobile-data-causing-reboot.4157699%2F&link2key=8cb9c9d33b "https://forum.xda-developers.com/t/help-connecting-to-mobile-data-causing-reboot.4157699/")
+现在基本没有必要为了这种文件而担心。黑客直接入侵手机的成本是非常高的，Android
+自己的安全系统也足以把绝大多数的木马拒之门外，只要不安装来源不明的 app
+就基本不用担心安全问题了。
+</Reply>
+  </Post>
+</Forum>

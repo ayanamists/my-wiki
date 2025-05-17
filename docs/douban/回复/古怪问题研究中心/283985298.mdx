@@ -1,0 +1,60 @@
+---
+title: 学术思辨｜大家对于1+1=2是算出来的还是背出来的？
+---
+
+import { Forum, Post, Reply } from '@site/src/components/Forum';
+
+<Forum groupName="古怪问题研究中心" groupUrl="https://www.douban.com/group/philosophasters/" archivedAt="2025-05-16T14:41:11.669Z">
+  <Post
+    id="283985298"
+    title="学术思辨｜大家对于1+1=2是算出来的还是背出来的？"
+    url="https://www.douban.com/group/topic/283985298/?_spm_id=MTA2NzQ5MTg2"
+    pubTime="2023-03-17"
+    highlightUserId="191397140"
+  >
+同理，1+2=3是算出来的还是背出来的？
+
+那1+10=11呢？
+
+15+17=32应该是算出来的吧？但好像也是基于背出来的。
+
+所以数学的基础运算到底是算出来的还是背出来的？
+
+<Reply
+  id="5065532591"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-03-16"
+  pubLocation="11:28:13 江苏"
+  upvotes={1}
+>
+这个我会，看你用的算法是什么了。 + 如果你用的算法用到了 1 + 1 = 2
+这个先验事实，那么就是「背出来的」 +
+如果你用的萨夫纳没有用到这个先验事实，那么就是「算出来的」
+对于加法来说，最简单的算法是： 0 + n = n (S n\') + n = S (n\' + n)
+那么这样的话， 1 + 1 ≡ S 0 + S 0 = S (0 + S 0) = S (S 0) ≡ 2
+但问题是，大部分人用的是十进制加法，那这个相当于一个序列加另一个序列，这个算法一般来说都把
+1 + 1 = 2 当成是一个先验事实。类似的有 2 + 3 = 5，9 + 1 = 10
+之类的所有个位数加法。具体可以参考这个二进制加法的实现：
+[https://stackoverflow.com/questions/62542639/addition-of-binary-numbers-in-haskell](https://www.douban.com/link2/?url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F62542639%2Faddition-of-binary-numbers-in-haskell&link2key=8cb9c9d33b "https://stackoverflow.com/questions/62542639/addition-of-binary-numbers-in-haskell")
+</Reply>
+
+<Reply
+  id="5065545784"
+  authorId="191397140"
+  authorName="Fisherchenxi"
+  authorAvatar="https://img1.doubanio.com/icon/up191397140-20.jpg"
+  pubTime="2023-03-16"
+  pubLocation="11:39:55 江苏"
+  upvotes={0}
+>
+回复 [批个作业](https://www.douban.com/people/129822935/)：
+> 是背出来的，我一直非常坚信是背出来的，如果我们有能力证明1+1为什么等于2的话，那我们就都是陈景润了
+
+你这是抖了个激灵吗（说的那个 「1 + 1」），1 + 1 = 2 在皮亚诺公理 /
+类型论里面的证明是很短的......在 ZFC
+里面因为它不支持「原生的」递归函数，得用一些定理保证这个函数存在，所以加法的定义比较复杂。但是定义出来加法以后得到这个事实是很简单的。
+</Reply>
+  </Post>
+</Forum>
