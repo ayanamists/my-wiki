@@ -83,7 +83,9 @@ export function Reply({
       <div className={styles.replyHeader}>
         <img src={authorAvatar} className={styles.avatar} />
         <div>
-          <strong>{authorName}</strong> · <span>{pubTime}</span> · <span>{pubLocation}</span>
+          <strong>
+            <a href={`https://douban.com/people/${authorId}`}>{authorName}</a>
+          </strong> · <span>{pubTime}</span> · <span>{pubLocation}</span>
           {upvotes > 0 && <span className={styles.upvotes}>👍 {upvotes}</span>}
         </div>
       </div>
