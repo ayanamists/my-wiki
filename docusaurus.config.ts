@@ -15,6 +15,17 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'referrer',
+        content: 'no-referrer',
+      },
+    }
+  ],
+
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ayanamists', // Usually your GitHub org/user name.
@@ -27,8 +38,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -76,9 +87,15 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'csSidebar',
           position: 'left',
           label: '计算机',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'doubanSidebar',
+          position: 'left',
+          label: '豆瓣',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {

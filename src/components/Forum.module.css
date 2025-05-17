@@ -1,0 +1,74 @@
+.forum {
+  padding: 1rem;
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: var(--ifm-background-color);
+  border-radius: var(--ifm-global-radius);
+  margin-bottom: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.archivedAt {
+  font-size: 0.85rem;
+  color: var(--ifm-color-secondary);
+}
+
+.post {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  padding: 1rem;
+  background-color: var(--ifm-background-surface-color);
+  margin-bottom: 2rem;
+}
+
+.postTitle {
+  margin-bottom: 0.5rem;
+}
+
+.metadata {
+  font-size: 0.85rem;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 1rem;
+}
+
+.postBody {
+  line-height: 1.6;
+}
+
+.reply {
+  border-top: 1px dashed var(--ifm-color-emphasis-200);
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.replyHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.replyBody {
+  padding-left: 2rem;
+}
+
+.upvotes {
+  margin-left: 0.5rem;
+  font-weight: bold;
+  color: var(--ifm-color-success);
+}
+
+.highlight {
+  background-color: var(--ifm-color-emphasis-100);
+}
