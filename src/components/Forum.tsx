@@ -92,6 +92,73 @@ export function Reply({
   ) : null;
 }
 
+// Image component for better layout
+export function ForumImage({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt?: string;
+  caption?: string;
+}) {
+  const [isExpanded, setIsExpanded] = React.useState(false);
+  const [isLoaded, setIsLoaded] = React.useState(false);
+  
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  return (
+    <div className={styles.imageContainer}>
+      <div 
+        className={clsx(
+          styles.imageWrapper, 
+          isExpanded && styles.expanded,
+          !isLoaded && styles.loading
+        )}
+      >
+        <img 
+          src={src} 
+          alt={alt || caption || 'Forum image'} 
+          onClick={toggleExpand}
+          onLoad={() => setIsLoaded(true)}
+          className={styles.forumImage}
+        />
+        {!isLoaded && <div className={styles.imagePlaceholder}>Loading image...</div>}
+      </div>
+      {caption && <div className={styles.imageCaption}>{caption}</div>}
+      <button 
+        className={styles.expandButton} 
+        onClick={toggleExpand}
+        aria-label={isExpanded ? "Collapse image" : "Expand image"}
+      >
+        {isExpanded ? '收起图片' : '展开图片'}
+      </button>
+    </div>
+  );
+}
+
+// Gallery component for multiple images
+export function ImageGallery({
+  images,
+}: {
+  images: Array<{src: string; alt?: string; caption?: string}>;
+}) {
+  return (
+    <div className={styles.gallery}>
+      {images.map((image, index) => (
+        <ForumImage 
+          key={index} 
+          src={image.src} 
+          alt={image.alt} 
+          caption={image.caption} 
+        />
+      ))}
+    </div>
+  );
+}
+
 // context 传递 highlightUserId
 const HighlightUserContext = React.createContext<string | undefined>(undefined);
 
