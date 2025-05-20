@@ -79,8 +79,8 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     algolia: {
-      appId: 'S23TUB06KD',
-      apiKey: 'c58e4a6805f91b1807e46ed64d76fba7',
+      appId: 'Y8G81A442N',
+      apiKey: '8e736867e3c4c99bfb45ca6987b11a19',
       indexName: 'ayayaya',
     },
     navbar: {
