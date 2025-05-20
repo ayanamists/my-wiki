@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -78,6 +78,11 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    algolia: {
+      appId: 'S23TUB06KD',
+      apiKey: 'c58e4a6805f91b1807e46ed64d76fba7',
+      indexName: 'ayayaya',
+    },
     navbar: {
       title: 'Aya\'s wiki',
       logo: {
