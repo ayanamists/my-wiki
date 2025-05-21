@@ -79,7 +79,9 @@ export function Reply({
   const highlight = React.useContext(HighlightUserContext);
   const isHighlight = highlight === authorId;
   return (
-    <div className={clsx(styles.reply, isHighlight && styles.highlight)}>
+    <div className={clsx(styles.reply, isHighlight && styles.highlight)}
+         id={`reply-${id}`}
+      >
       <div className={styles.replyHeader}>
         <img src={authorAvatar} className={styles.avatar} />
         <div>
